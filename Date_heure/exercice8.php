@@ -4,9 +4,18 @@
 date_default_timezone_set("Europe/Paris");
 
 
-// Ajoutez 1 mois à la date courante:
+// La fonction date() retourne la date du jour:
 
-echo "Nous somme le : ".date('d-m-Y', strtotime('+1 month'));
+echo "La date courante : ".date('d-m-Y');
+
+echo "<br><br>";
+
+
+// Ajoutons 1 mois à la date courante:
+
+echo  "Un mois plus tard : ";
+
+echo date('d-m-Y', strtotime('+1 month'));
 
 
 ?>
